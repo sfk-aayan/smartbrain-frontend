@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+    body {
+        padding-top: calc(var(--spacing) * 0);
+    }
+}
