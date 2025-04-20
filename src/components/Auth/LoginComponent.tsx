@@ -52,3 +52,4 @@ const LoginComponent: React.FC<LoginProp> = ({ toggle }) => {
 };
 
 export default LoginComponent;
+
