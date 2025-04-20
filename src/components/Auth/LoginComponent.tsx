@@ -1,9 +1,9 @@
 import React from "react";
 import InputComponent from "../Common/InputComponent";
 import ButtonComponent from "../Common/ButtonComponent";
-import { LoginProp } from '../../types/components';
+import { Link } from 'react-router-dom';
 
-const LoginComponent: React.FC<LoginProp> = ({ toggle }) => {
+const LoginComponent: React.FC = () => {
   return (
     <div className="w-[350px] max-w-[450px]">
       <h2 className="mb-6 text-center text-3xl font-extrabold text-white">
@@ -36,16 +36,12 @@ const LoginComponent: React.FC<LoginProp> = ({ toggle }) => {
         </div>
       </form>
       <p>
-        <a
-          href="/"
+        <Link
+          to="/register"
           className="font-medium text-white text-sm hover:cursor-pointer hover:underline"
-          onClick={(e) => {
-            e.preventDefault();
-            toggle(true);
-          }}
-        >
+          >
           Don't have an account? Sign up.
-        </a>
+        </Link>
       </p>
     </div>
   );

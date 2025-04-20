@@ -18,14 +18,10 @@ export interface InputProps {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export interface RegistrationProp {
-  toggle: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-export interface LoginProp {
-  toggle: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
 export interface AuthProp {
   children: React.ReactNode;
+}
+
+export interface ImageTextProp {
+  imageUrl: string;
 }

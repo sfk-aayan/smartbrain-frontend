@@ -1,9 +1,9 @@
 import React from "react";
 import InputComponent from "../Common/InputComponent";
 import ButtonComponent from "../Common/ButtonComponent";
-import { RegistrationProp } from '../../types/components';
+import { Link } from 'react-router-dom';
 
-const RegistrationComponent: React.FC<RegistrationProp> = ({ toggle }) => {
+const RegistrationComponent: React.FC = () => {
   return (
     <div className="w-[350px] max-w-[450px]">
       <h2 className="mb-6 text-center text-3xl font-extrabold text-white">
@@ -44,16 +44,12 @@ const RegistrationComponent: React.FC<RegistrationProp> = ({ toggle }) => {
         </div>
       </form>
       <p>
-        <a
-          href="/"
+        <Link
+          to="/login"
           className="font-medium text-white text-sm hover:cursor-pointer hover:underline"
-          onClick={(e) => {
-            e.preventDefault();
-            toggle(false);
-          }}
         >
           Already have an account? Sign in.
-        </a>
+        </Link>
       </p>
     </div>
   );

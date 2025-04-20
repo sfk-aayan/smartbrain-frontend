@@ -6,7 +6,7 @@ const InputComponent: React.FC<InputProps> = ({
   type,
   label,
   name = "",
-  className = "py-2 px-3 min-h-[48px] border rounded-lg mt-2 block w-full border-zinc-600 hover:border-zinc-200 hover:cursor-pointer bg-gradient-to-r from-zinc-800 to-zinc-900 text-white",
+  className = "py-2 px-3 min-h-[48px] border rounded-lg mt-2 block w-full border-zinc-600 hover:border-zinc-200 hover:cursor-pointer bg-transparent text-white",
   placeholder = "",
   required = false,
   autoComplete = "off",
